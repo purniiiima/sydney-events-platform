@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
+    origin: "https://sydney-events-platform-jv92.vercel.app",
     credentials: true,
   }),
 );
