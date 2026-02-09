@@ -6,7 +6,7 @@ export default function Events() {
 
   useEffect(() => {
     api
-      .get("http://localhost:5050/api/events")
+      .get("https://sydney-events-platform-92fx.onrender.com/api/events")
       .then(res => setEvents(res.data))
       .catch(err => console.error(err));
   }, []);
